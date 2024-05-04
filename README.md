@@ -1,5 +1,7 @@
 # Chat Application
 
+[View Live Site](http://csun.wiki)
+
 The code for the server is in /scripts/server.js
 
 The code for the username selection is in /src/features/user/ui/user-input.vue
