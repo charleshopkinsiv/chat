@@ -13,7 +13,7 @@ import InputSubmit from './../../../components/ui/input-submit.vue'
 const emit = defineEmits(['newConnection']);
 
 async function connectUser(user) {
-    let ws = new WebSocket('ws://localhost:8080');
+    let ws = new WebSocket('ws://csun.wiki:8080');
     ws.onopen = async () => {
         console.log('Connected to server');
         // await ws.send({
