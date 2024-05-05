@@ -36,6 +36,10 @@ wss.on('connection', function connection(ws) {
         // Remove user from array and broadcast
         elseif(type === 'logout') {
             users.splice(users.indexOf(ws), 1);
+            broadcastMessage({
+                type: 'logout',
+                username: ws.username
+            });
         }
     });
 });
